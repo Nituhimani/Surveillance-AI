@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coordinate Tracker</title>
+  <style>
+    body, html { margin:0; height:100%; }
+    #map { height:100%; width:100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- our main JS file -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <!-- load Google Maps (async) -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key={{ maps_api_key }}&callback=initMap"
+    async defer></script>
+</body>
+</html>

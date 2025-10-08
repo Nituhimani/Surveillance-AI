@@ -7,7 +7,7 @@ import cv2
 from ultralytics import YOLO
 
 # ----------------- EDITABLE CONFIG (kept defaults to your sih folder paths) -----------------
-BASE_DIR = r"C:\Users\rohan_075b4dd\OneDrive\Desktop\sih"
+BASE_DIR = r"/"
 MODEL_PATH = os.path.join(BASE_DIR, "models", "suspicious_model4", "weights", "best.pt")
 IMAGE_PATH = os.path.join(BASE_DIR, "dataset","suspicious-model-1", "test", "images", "OIP.jpg")
 OUT_ANNOTATED = os.path.join(BASE_DIR, "results", "suspicious_model", "images", "res14.jpg")
